@@ -1,7 +1,7 @@
 CREATE DATABASE 
-	IF NOT EXISTS inmobiliaria_db;
+	IF NOT EXISTS inmobiliaria_JM;
     
-USE inmobiliaria_db;
+USE inmobiliaria_JM;
 
 -- Tabla de propiedades
 
