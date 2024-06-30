@@ -1,8 +1,6 @@
 
-JM
-Inmobiliaria
+![Imagen de WhatsApp 2024-06-30 a las 20 09 19_952eda4e](https://github.com/JuanMR2022/MYSQL-II/assets/107951114/f32c983e-1672-468d-91f6-28b105002bc4)
 
-[Icono gráfico]
 
 
 *Presentación de la Inmobiliaria "JM"*
