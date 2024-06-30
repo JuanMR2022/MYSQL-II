@@ -1,3 +1,6 @@
+
+![Imagen de WhatsApp 2024-06-30 a las 20 01 52_37c7dcc9](https://github.com/JuanMR2022/MYSQL-II/assets/107951114/04782548-95e6-4c47-92be-c5ca8898f801)
+
 *Presentación de la Inmobiliaria "JM"*
 
 *Visión y Misión:*
