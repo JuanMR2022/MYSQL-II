@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS inmobiliaria_jm;
 CREATE DATABASE 
 	IF NOT EXISTS inmobiliaria_JM;
     
@@ -60,3 +61,57 @@ CREATE TABLE ContratosVenta (
     FOREIGN KEY (AgenteID) REFERENCES Agentes(AgenteID),
     FOREIGN KEY (ClienteID) REFERENCES ClientesInteresados(ClienteID)
 );
+-- Tabla de alquileres
+CREATE TABLE Alquileres (
+AlquilerID INT PRIMARY KEY AUTO_INCREMENT,
+PropiedadID INT,
+Tipo VARCHAR(50),
+Direccion VARCHAR(100),
+Ciudad VARCHAR(50),
+Estado VARCHAR(50),
+CodigoPostal VARCHAR(20),
+PrecioMensual DECIMAL(10, 2),
+Habitaciones INT,
+Banos INT,
+Area DECIMAL(10, 2),
+FOREIGN KEY (PropiedadID) REFERENCES Propiedades(PropiedadID)
+);
+
+-- Tabla de construcción en pozo
+CREATE TABLE ConstruccionPozo (
+ConstruccionID INT PRIMARY KEY AUTO_INCREMENT,
+TipoProyecto VARCHAR(50),
+Direccion VARCHAR(100),
+Ciudad VARCHAR(50),
+Estado VARCHAR(50),
+CodigoPostal VARCHAR(20),
+FechaInicio DATE,
+FechaEntrega DATE,
+PrecioInicial DECIMAL(10, 2),
+AreaProyecto DECIMAL(10, 2)
+);
+
+-- Tabla de oficinas
+CREATE TABLE Oficinas (
+OficinaID INT PRIMARY KEY AUTO_INCREMENT,
+NombreEdificio VARCHAR(100),
+Direccion VARCHAR(100),
+Ciudad VARCHAR(50),
+Estado VARCHAR(50),
+CodigoPostal VARCHAR(20),
+PrecioAlquilerMensual DECIMAL(10, 2),
+Area DECIMAL(10, 2)
+);
+
+-- Tabla de locales comerciales
+CREATE TABLE LocalesComerciales (
+LocalID INT PRIMARY KEY AUTO_INCREMENT,
+NombreLocal VARCHAR(100),
+Direccion VARCHAR(100),
+Ciudad VARCHAR(50),
+Estado VARCHAR(50),
+CodigoPostal VARCHAR(20),
+PrecioAlquilerMensual DECIMAL(10, 2),
+Area DECIMAL(10, 2)
+);
+
