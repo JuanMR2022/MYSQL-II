@@ -1,7 +1,7 @@
-*Presentación de la Inmobiliaria "CasaIdeal"*
+*Presentación de la Inmobiliaria "JM"*
 
 *Visión y Misión:*
-CasaIdeal es una inmobiliaria comprometida con ofrecer a nuestros clientes las mejores opciones de propiedades residenciales y comerciales, adaptadas a sus necesidades y presupuesto. Nuestra misión es facilitar la compra, venta y alquiler de inmuebles, garantizando un servicio profesional y personalizado que inspire confianza y satisfacción.
+JM es una inmobiliaria comprometida con ofrecer a nuestros clientes las mejores opciones de propiedades residenciales y comerciales, adaptadas a sus necesidades y presupuesto. Nuestra misión es facilitar la compra, venta y alquiler de inmuebles, garantizando un servicio profesional y personalizado que inspire confianza y satisfacción.
 
 *Servicios Ofrecidos:*
 1. *Venta y Alquiler de Propiedades:* Amplia gama de casas, apartamentos, oficinas y terrenos disponibles.
@@ -10,7 +10,7 @@ CasaIdeal es una inmobiliaria comprometida con ofrecer a nuestros clientes las m
 4. *Evaluación de Propiedades:* Servicios de tasación y evaluación de inmuebles.
 
 *Problemática:*
-A pesar de nuestro compromiso y dedicación, CasaIdeal enfrenta varias problemáticas que obstaculizan la eficiencia y calidad de nuestros servicios:
+A pesar de nuestro compromiso y dedicación, "JM" enfrenta varias problemáticas que obstaculizan la eficiencia y calidad de nuestros servicios:
 
 1. *Gestión Ineficiente de Datos:* Actualmente, la información sobre propiedades, clientes y agentes está dispersa en múltiples formatos y sistemas. Esto dificulta el acceso rápido y preciso a la información necesaria para tomar decisiones informadas y prestar un buen servicio a los clientes.
 
@@ -30,28 +30,76 @@ A pesar de nuestro compromiso y dedicación, CasaIdeal enfrenta varias problemá
 4. *Mejora del Servicio al Cliente:* Implementar un sistema de seguimiento y gestión de clientes que permita a los agentes ofrecer un servicio más personalizado y eficiente.
 
 *Conclusión:*
-CasaIdeal está comprometida con la mejora continua de nuestros servicios y la implementación de soluciones tecnológicas que nos permitan superar las barreras actuales. Con la optimización de nuestros procesos y la centralización de nuestra información, aspiramos a elevar nuestra calidad de servicio y asegurar la satisfacción de nuestros clientes en cada transacción.
+JM está comprometida con la mejora continua de nuestros servicios y la implementación de soluciones tecnológicas que nos permitan superar las barreras actuales. Con la optimización de nuestros procesos y la centralización de nuestra información, aspiramos a elevar nuestra calidad de servicio y asegurar la satisfacción de nuestros clientes en cada transacción.
 
 ```
-Clientes Interesados ---< ClienteID >--- Visitas ---< PropiedadID >--- Propiedades
-       |                                  |
-       |                                  |
-       |                                  |
-       |                                  |
-       ----< ClienteID >--- Contratos de Venta ---< PropiedadID >---
-                           |                |
-                           |                |
-                           |                |
-                           |                |
-                           ----< AgenteID >--- Agentes
++-----------------------+
+|    inmobiliaria_JM    |
++-----------------------+
+           |
+           |
+   +-------+-------+
+   |               |
+   |  Propiedades  |
+   |               |
+   +-------+-------+
+           |
+           |
+   +-------+-------+
+   |               |
+   |   Agentes     |
+   |               |
+   +-------+-------+
+           |
+           |
+   +-------+-------+
+   |               |
+   | ClientesInteresados |
+   |               |
+   +-------+-------+
+           |
+           |
+   +-------+-------+
+   |               |
+   |    Visitas    |
+   |               |
+   +-------+-------+
+           |
+           |
+   +-------+-------+
+   |               |
+   | ContratosVenta |
+   |               |
+   +-------+-------+
+           |
+           |
+   +-------+-------+
+   |               |
+   |   Alquileres  |
+   |               |
+   +-------+-------+
+           |
+           |
+   +-------+-------+
+   |               |
+   | ConstruccionPozo |
+   |               |
+   +-------+-------+
+           |
+           |
+   +-------+-------+
+   |               |
+   |   Oficinas    |
+   |               |
+   +-------+-------+
+           |
+           |
+   +-------+-------+
+   |               |
+   | LocalesComerciales |
+   |               |
+   +-------+-------+
 
-Clientes Interesados ---< ClienteID >--- Contratos de Alquiler ---< PropiedadID >---
-                           |                |
-                           |                |
-                           |                |
-                           |                |
-                           ----< AgenteID >--- Agentes
 
-Propiedades ---< PropiedadID >--- Construcciones en Pozo
 ```
 
