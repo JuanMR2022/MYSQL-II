@@ -115,3 +115,17 @@ PrecioAlquilerMensual DECIMAL(10, 2),
 Area DECIMAL(10, 2)
 );
 
+--Tabla de Lotes
+
+CREATE TABLE Lotes (
+    id_lote INT PRIMARY KEY AUTO_INCREMENT,
+    nombre_lote VARCHAR(100) NOT NULL,
+    fecha_creacion DATE NOT NULL,
+    estado VARCHAR(50) NOT NULL,
+    cantidad INT NOT NULL,
+    descripcion TEXT
+);
+
+--
+
+
